@@ -1,233 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" >
 <head>
+  <meta charset="UTF-8">
+  <title>Login Page with Background Image Example</title>
+  <link rel="stylesheet" href="./style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<style>
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-.column1 {
-  float: left;
-  width: 60%;
-}
-
-.column2 {
-  float: left;
-  width: 30%;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #000000;
-  width:90%;
-  margin-left:5%;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 18px;
-  transition: 0.3s;
-  font-size: 17px;
-  color:white;
-
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #333333;
-  color:white;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #000000;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-  float: center;
-}
-
-</style>
 </head>
+<body>
+<div id="bg"></div>
 
-<body style="background-image: url('https://www.theamplituhedron.com/projects/How-to-make-a-scroll-menu-with-random-star-background-in-HTML/Pictures/1.JPG');">
+<form action= document.getElementById("Username").value+".html">
+<h1 style="color:white font-size: 60px;"><center>Student Login</center></h1>
 
-
-<h1 style="font-size:50px; color:white"><center>ElijahTache</center></h1>
-
-
-<img id="scream" src="https://dub01pap003files.storage.live.com/y4m9S9w1-kL1D67UudUtPoXjoShfNwjTBxCyGATQo0NYHBXpzLbGktAjuWsXZHTUjBCqipnmB4a7Z_Q_TNWkp0kgEU5-cozzZ5L5Go206woiWdM8ZCzrhqT2b_n_y7M-OqIjq9HNHd5-q-Ay3v5F27xXCdntma7e1CD-QrdFakmZOv5H-S5ffQNU-z3rvN2r6m5?width=1541&height=356&cropmode=none" width="0" height="0" />
-
-
-
-<div class="tab">
- <center>
-  <button class="tablinks" onclick="changeTab(event, 'practice')">מעבדת תרגילים</button>
-  <button class="tablinks" onclick="changeTab(event, 'lecture')">הרצאות מוקלטות</button>
-  <button class="tablinks" onclick="changeTab(event, 'info')">מדריכים</button>
-   <button class="tablinks" onclick="changeTab(event, 'music')">צלילים לשיפור קשב וריכוז</button>
-   <button class="tablinks" onclick=" window.open('https://us02web.zoom.us/j/9609369929','_blank')" target="_blank">היכנס אל השיעור</button>
-   <button class="tablinks" onclick=" window.open('https://onedrive.live.com/?id=d652528c148ae037%210%5EL0xpdmVGb2xkZXJzL0Vhc3lQcm9ncmFtbWluZ19QbGF0Zm9ybTIuMC9FYXN5UHJvZ3JhbW1pbmdfUGxhdGZvcm0vYmluL0RlYnVnL1N0dWRlbnRzRGlyL0VsaWphaFRhY2hlLWMjL0VsaWphaFRhY2hlJ3MgZHJpdmU&cid=D652528C148AE037','_blank')" target="_blank">היכנס אל הדרייב הפרטי</button>
-</center>
-</div>
-
-<div style="margin-left:5%;margin-right:5%;" id="lecture" class="tabcontent">
-
-<h1 style=color:white><center> ניתן בלחיצה על התמונה לשלוח לי הודעה בווצאפ או להיכנס אל ההרצאות המוקלטות שלך</center></h1>
-
-<div class="row">
-  <div style="margin-left:5%" class="column1">
-  <a href="https://lirondavid-my.sharepoint.com/:v:/g/personal/lirondavid_lirondavid_onmicrosoft_com/EZlQgpJBUopMnVxLrKxk_oYBe9yhgN68Hqbbp0flQMzTAw" target="_blank">
-    <img src="https://i.ibb.co/gyG9XXc/office1.gif" style="width:100%; height=300px;">
-  </a></div>
- 
- 
-  <div class="column2">
-   <a href="https://wa.me/message/ONRB22AVDWN2F1" target="_blank"><img src="https://i.ibb.co/mJhL7wc/office2.gif" style="width:100%; height=300px;"></a>
+  <div class="form-field">
+    <input type="email" placeholder="Username" id="Username" required/>
   </div>
+  
+  <div class="form-field">
+    <button class="btn" type="submit">Log in</button>
   </div>
-
-</div>
-
-<div style="margin-left:5%;margin-right:5%;" id="info" class="tabcontent">
-
-<h1 style=color:white><center>במסמך זה מוסבר כיצד לפתוח את ספריית הוידיאו</center></h1>
-
-<iframe src="https://onedrive.live.com/embed?cid=D652528C148AE037&resid=D652528C148AE037%21144205&authkey=AHGoTc-fwXR13v4&em=2" style="border:none; margin-left:5%;"  width="90%" height="800px" frameborder="0" scrolling="no"></iframe>
-
-
-<h1 style=color:white><center> במסמך זה ניתן לראות את המפרט של מהלך השיעורים</center></h1>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQvPCQHywqGZeZNrKoKEMaCI2sd_faPECbXavwm-EfxE7Tqw/viewform" style="border:none; margin-left:5%;" name="iframe_c" height="800px" width="90%" title="Iframe Example"></iframe>
-
-
-</div>
-
-
-<div   style="margin-left:5%; margin-right:5%;" id="music" class="tabcontent">
-<h1 style=color:white><center> לפנייך פלייליסט מיוחד עם צלילים משפרי ריכוז וביצועים, לצורך השימוש יש לשים אוזניות</center></h1>
-<h2 style=color:white><center>כמוכן אין להשתמש בשמע זה יותר מ 45 דקות ברציפות ללא הפסקות</center></h2>
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLYxDe5076VKI7Ja84ePVrTWHxWO_l8pe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h2 style=color:white><center>ניתן לעבור בין החלוניות חזרה אל חלונית הקוד השיתופי - השמע ימשיך לפעול כל עוד לא נלחץ על עצירתו</center></h2>
-</div>
-
-
-
-
-<div style="margin-left:5%;margin-right:5%;" id="practice" class="tabcontent">
-
-<h1 style=color:white><center>מעבדת התרגילים</center></h1>
-
-<canvas  style="border:1px solid grey; margin-left:5%; width:90%;" id="mycanvas"></canvas>
-
-<iframe src="https://codecollab.io/@lirondavid/ElijahTache" style="border:none;margin-left:5%;" name="iframe_b" height="800px" width="90%" title="Iframe Example"></iframe>
-</div>
-
-<a href="userLobby.html"><button>Click Me</button> </a>
-	
-
-<script>
-
-window.onload = function() {
-  var c = document.getElementById("mycanvas");
-  var ctx = c.getContext("2d");
-  var img = document.getElementById("scream");
-  c.width = 1541;
-  c.height = 356;
-  ctx.drawImage(img, 0, 0);
-  changeTab(event, 'practice')
-}
-
-function changeTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-
-function retrieveImageFromClipboardAsBlob(pasteEvent, callback){
-	if(pasteEvent.clipboardData == false){
-        if(typeof(callback) == "function"){
-            callback(undefined);
-        }
-    };
-
-    var items = pasteEvent.clipboardData.items;
-
-    if(items == undefined){
-        if(typeof(callback) == "function"){
-            callback(undefined);
-        }
-    };
-
-    for (var i = 0; i < items.length; i++) {
-        if (items[i].type.indexOf("image") == -1) continue;
-        var blob = items[i].getAsFile();
-
-        if(typeof(callback) == "function"){
-            callback(blob);
-        }
-    }
-}
-
-window.addEventListener("paste", function(e){
-    retrieveImageFromClipboardAsBlob(e, function(imageBlob){
-        if(imageBlob){
-            var canvas = document.getElementById("mycanvas");
-            var ctx = canvas.getContext('2d');    
-            var img = new Image();
-            img.onload = function(){
-                canvas.width = this.width;
-                canvas.height = this.height;
-                ctx.drawImage(img, 0, 0);
-            };
-            var URLObj = window.URL || window.webkitURL;
-            img.src = URLObj.createObjectURL(imageBlob);
-        }
-    });
-}, false);
-
-
-
-
-
-</script>
-
+</form>
+  
 </body>
 </html>
-
