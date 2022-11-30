@@ -9,7 +9,7 @@
 <body>
 <div id="bg"></div>
 
-<form>
+<form onsubmit="return setAction()">
 <h1 style="color:white font-size: 60px;"><center>Student Login</center></h1>
 
   <div class="form-field">
@@ -20,6 +20,15 @@
     <button class="btn" type="submit">Log in</button>
   </div>
 </form>
+  
+ <script>
+ function setAction() {
+  init = "https://easyprogramming.netlify.app/"
+  var user =  init+document.getElementById("Username").value;
+   window.open(user);
+}
+</script>
+ 
   
 </body>
 </html>
